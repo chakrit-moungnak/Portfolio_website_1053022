@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('sakura_bg.jpg');
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+legend{
+    background-color: white;
+}
+
+fieldset{
+    background-color: white;
+    border-radius: 10px;
+}
+
+#container {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.maroon{
+    background-color: maroon; 
+}
+.lightgreen{
+    background-color: lightgreen; 
+}
+
+.magenta{
+    background-color: magenta; 
+}
